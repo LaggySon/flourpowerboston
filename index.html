@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    <title>Flour Power Boston</title>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li id="productsLink">Products</li>
+        <li id="orderFormLink">Order Form</li>
+        <li id="aboutLink">About</li>
+        <li id="contactUsLink">Contact Us</li>
+      </ul>
+    </nav>
+
+    <!-- LANDING SECTION (LOGO AND TITLE TEXT) -->
+
+    <section class="landing">
+      <div>
+        <h1>Welcome to Flour Power!</h1>
+        <br />
+        <h2>Bake for Change</h2>
+      </div>
+      <img src="./logo.png" alt="Flour Power Logo" />
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+
+    <section id="products">
+      <h1>What can you order?</h1>
+      <p>(click for a video)</p>
+      <hr width="33%" size="4" color="#000000" />
+      <!-- GALLERY -->
+      <div id="gallery">
+        <div class="container">
+          <p>Peanutbutter Chocolate Chip Cookies</p>
+          <div class="img-container">
+            <img
+              src="./media/pbcc2.jpg"
+              alt="Peanutbutter chocolate chip cookies"
+              data-original="pbcc-video.mp4"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <p>Chocolate Chip Cookies</p>
+          <div class="img-container">
+            <img
+              src="./media/cc-cookie.jpg"
+              alt="chocolate chip cookies"
+              data-original="cc-video.mov"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <p>Blueberry Muffins</p>
+          <div class="img-container">
+            <img
+              src="./media/blueberry-muffins.jpg"
+              alt="Blueberry Muffins"
+              data-original="muffins-video.mp4"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <p>Brownies</p>
+          <div class="img-container">
+            <img
+              src="./media/brownies.jpg"
+              alt="Brownies"
+              data-original="brownies-video.mov"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- END OF GALLERY -->
+      <div class="modal">
+        <video controls src="" alt="" class="full-vid" />
+        <p class="caption"></p>
+      </div>
+    </section>
+
+    <!-- ORDER FORM SECTION -->
+
+    <section id="orderForm">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSer8QHDgZzDG6TmLP6RcrSekDrcj_adZV3WF_gXs_8_bBSNEQ/viewform?embedded=true"
+        width="640"
+        height="1544"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        >Loading…</iframe
+      >
+    </section>
+
+    <!-- ABOUT US SECTION -->
+
+    <section id="aboutUs" class="moreInfo">
+      <h1>
+        About Us
+      </h1>
+      <hr width="25%" size="4" color="#000000" />
+      <p>
+        Flour Power is an online bakery that bakes to help change the lives of
+        young people.
+        <strong
+          >We donate 50% of our profits to
+          <a href="https://www.girleffect.org"><u>Girl Effect</u></a></strong
+        >. They are an international non-profit that uses media and technology
+        to empower girls to change their lives. Once you place an order we will
+        email you with your pick up time and address.
+      </p>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
